@@ -67,7 +67,7 @@ section {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.32;
+    opacity: 0.6;
 }
 .call_now_bg_about {
 	position: absolute;
@@ -81,7 +81,7 @@ section {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.32;
+    opacity: 0.6;
 }
 .call_now_bg_contact {
 	position: absolute;
@@ -95,7 +95,7 @@ section {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    opacity: 0.32;
+    opacity: 0.6;
 }
 .call_now_section h3 {
 	font-size: 24px;

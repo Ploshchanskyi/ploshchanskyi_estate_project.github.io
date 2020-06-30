@@ -1,16 +1,21 @@
-let header = document.querySelector("header");
-header.addEventListener("click", function() {
-	header.classList.toggle("header")
-	header.classList.toggle("scrolled")
-})
+let header = document.getElementById("header")
+let html = document.documentElement;
+let body = document.body;
+
+window.onscroll = function () {
+	setHeader()
+}
+
+function setHeader () {
+	if (html.scrollTop > 100 || body.scrollTop > 100) {
+		header.classList.add("scrolled")
+	} else {
+		header.classList.remove("scrolled")
+	}
+}
 
 
 
 
-// function setHeader () {
-// 	if(window.scrollTop() > 100) {
-// 		header.addClass('scrolled');
-// 	} else {
-// 		header.removeClass("scrolled")
-// 	}
-// }
+
+
