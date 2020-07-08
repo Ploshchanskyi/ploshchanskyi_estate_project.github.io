@@ -97,3 +97,91 @@ textarea {
     color: white;
     margin-top: 40px;
 }
+
+
+.feedback_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/testimonials_background.jpg);
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.feedback_slider_container {
+	width: 85%;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 56px;
+}
+
+.feedback_text p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    min-height: 100px;
+}
+
+.client_feedback{
+	text-align: center;
+	margin-top: 67px;
+}
+
+.client_feedback_photo img {
+	border-radius: 50%;
+	width: 81px;
+	height: 81px;
+}
+
+.client_feedback_name {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fd784f;
+    margin-top: 17px;
+}
+
+.client_feedback_text{
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+.carousel-cell {
+	width: 100%;
+}
+
+.flickity-prev-next-button.previous {
+	display: none; 
+}
+
+.flickity-prev-next-button.next {
+	display: none;
+}
+
+.dot {
+	width: 10px !important;
+    height: 10px !important;
+	opacity: 1 !important;
+	background: none !important;
+	border: 2px solid #fd784f;
+}
+
+.dot.is-selected {
+	background: #fd784f !important;
+}
+.flickity-page-dots {
+	left:0;
+	right: 0;
+}
