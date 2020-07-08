@@ -2,19 +2,17 @@ let header = document.getElementById("header")
 let html = document.documentElement;
 let body = document.body;
 
-window.onscroll = function () {
-	setHeader()
-}
+ 
 
 function setHeader () {
-	if (html.scrollTop > 100 || body.scrollTop > 100) {
+	if (window.pageYOffset > 100){
 		header.classList.add("scrolled")
 	} else {
 		header.classList.remove("scrolled")
 	}
 }
 
-
+window.addEventListener("scroll", setHeader)
 
 
 $('.main-carousel').flickity({
