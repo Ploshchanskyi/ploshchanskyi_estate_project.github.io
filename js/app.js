@@ -15,16 +15,6 @@ function setHeader () {
 window.addEventListener("scroll", setHeader)
 
 
-$('.main-carousel').flickity({
-  // options
-  // cellAlign: 'left',
-  contain: true,
-  // freeScroll: true,
-  wrapAround: true,
-  autoPlay: true,
-});
-
-
 let menu_btn = document.querySelector(".menu_btn");
 let mobile_menu = document.querySelector(".mobile_menu_nav")
 
@@ -38,3 +28,13 @@ menu_btn.addEventListener("click", function() {
 })
 
 
+
+
+$('.main-carousel').flickity({
+  // options
+  // cellAlign: 'left',
+  contain: true,
+  // freeScroll: true,
+  wrapAround: true,
+  autoPlay: true,
+});
