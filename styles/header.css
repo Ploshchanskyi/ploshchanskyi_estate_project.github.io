@@ -88,12 +88,7 @@ header .row {
     margin-top: 1px;
 }
 
-.menu_nav {
 
-}
-.menu_nav_list {
-
-}
 .menu_nav_list_item {
 	display: inline-block;
 	margin: 0 20px;
@@ -141,4 +136,125 @@ header .row {
 
 .main_head {
 	height: 100vh;
+}
+
+
+/****************mobile header********/
+
+@media(max-width: 992px) {
+	.menu_btn {
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: relative;
+		margin-right: 15px;
+		cursor: pointer;
+		transition: all 0.5s ease-in-out;
+	}
+	.menu_btn span {
+		height: 2px;
+		width: 20px;
+		background-color: black;
+		position: absolute;
+		right: 0;
+		left: 0;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.scrolled .menu_btn span {
+		background-color: white;
+	}
+
+
+
+	.header .mobile_menu_nav.open {
+		
+	}
+
+	.scrolled .mobile_menu_nav.open {
+		background-color: #0e1d41 !important;
+	}
+
+    .mobile_menu_nav.open .menu_nav_list_item a {
+		 color: #0e1d41;
+	}
+
+	.scrolled .mobile_menu_nav.open .menu_nav_list_item a {
+		color: white;
+	}
+
+
+	.menu_btn span:nth-child(1) {
+		top: 0;
+	}
+	.menu_btn span:nth-child(2) {
+		top: 9px;
+	}
+	.menu_btn span:nth-child(3) {
+		bottom: 0;
+	}
+
+
+
+	.mobile_menu_nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 60%;
+		max-width: 60%;
+		/*transition: all 500ms ease;*/
+		transform: translateX(150%);
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+
+	.hidden_menu {
+
+	}
+
+	.phone_number {
+		display: none;
+	}
+
+	.mobile_menu_nav.open {
+		opacity: 1;
+		visibility: visible;
+		top: 70px;
+		transform: translateX(0);
+		background: transparent;
+		margin-right: -15px;
+		transition: all 300ms ease-in-out;
+
+	}
+
+	.mobile_menu_nav.open .menu_nav_list {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.mobile_menu_nav.open .menu_nav_list li {
+		padding-bottom: 20px;
+	}
+
+	
+}
+
+.open.menu_btn span:nth-child(1)  {
+	transform: rotate(45deg) translateY(12.5px);
+}
+
+.open.menu_btn span:nth-child(2) {
+	transform: translateX(-20px);
+	background: transparent;
+}
+
+.open.menu_btn span:nth-child(3)  {
+	transform: rotate(-45deg) translateY(-12.5px);
+}
+
+.mobile_menu_nav.open .menu_nav_list_item a:hover {
+	color: #fd784f;
 }

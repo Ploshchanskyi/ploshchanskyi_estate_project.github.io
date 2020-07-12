@@ -22,7 +22,19 @@ $('.main-carousel').flickity({
   // freeScroll: true,
   wrapAround: true,
   autoPlay: true,
-  
-
 });
+
+
+let menu_btn = document.querySelector(".menu_btn");
+let mobile_menu = document.querySelector(".mobile_menu_nav")
+
+menu_btn.addEventListener("click", function() {
+    menu_btn.classList.toggle("open");
+    if(menu_btn.classList.contains("open")) {  
+        mobile_menu.classList.add("open")
+    } else {
+      mobile_menu.classList.remove("open")
+    }
+})
+
 

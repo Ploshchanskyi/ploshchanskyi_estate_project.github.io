@@ -20,10 +20,7 @@
 	.container {
 		width: 95%;
 	}
-	.menu_nav
-	{
-		display: none;
-	}
+
 .call_now_section h3 {
 	margin-bottom: 30px;
 }
@@ -88,9 +85,7 @@
   
 }
 
-.menu_nav {
-	display: none;
-	}
+
 /*.phone_number {
 	display: none;
 	}*/
