@@ -27,14 +27,37 @@ menu_btn.addEventListener("click", function() {
     }
 })
 
+////////////////TABS
 
+let tablinks = document.querySelectorAll(".tablinks");
+let tabcontent = document.querySelector(".tabcontent");
 
+document.querySelector("#tab1").classList.add("active");
 
-$('.main-carousel').flickity({
-  // options
-  // cellAlign: 'left',
-  contain: true,
-  // freeScroll: true,
-  wrapAround: true,
-  autoPlay: true,
-});
+function openTab0 () {
+  document.querySelector("#tab2").classList.remove("active");
+  document.querySelector("#tab3").classList.remove("active");
+  if (document.querySelector("#tab1").classList.contains("active") != true) {
+    document.querySelector("#tab1").classList.add("active");
+  }
+}
+
+function openTab1 () {
+  document.querySelector("#tab1").classList.remove("active");
+  document.querySelector("#tab3").classList.remove("active");
+  if (document.querySelector("#tab2").classList.contains("active") != true) {
+  document.querySelector("#tab2").classList.add("active");
+  }
+}
+function openTab2 () {
+  document.querySelector("#tab1").classList.remove("active");
+  document.querySelector("#tab2").classList.remove("active");
+  if (document.querySelector("#tab3").classList.contains("active") != true) {
+  document.querySelector("#tab3").classList.add("active");
+  }
+}
+ 
+tablinks[0].addEventListener("click", openTab0); 
+tablinks[1].addEventListener("click", openTab1); 
+tablinks[2].addEventListener("click", openTab2); 
+

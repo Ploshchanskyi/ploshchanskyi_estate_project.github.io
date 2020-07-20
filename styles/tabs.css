@@ -1,0 +1,42 @@
+.tab {
+
+}
+
+.tab button {
+	height: 44px;
+    background-color: #fd784f;
+    width: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: none;
+    outline: none;
+        text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.tabcontent {
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	display: none;
+}
+
+.active {
+	display: block
+}
+
+.tabcontent h3 {
+	font-size: 22px;
+    font-weight: 600;
+    color: #0e1d41;
+}
+
+.tabcontent p {
+	font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    margin: 14px 0;
+}
